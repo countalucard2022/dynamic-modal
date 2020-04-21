@@ -1,0 +1,8 @@
+%p#notice= notice
+%p
+  %strong Description:
+  = @problem.description
+%p  
+= link_to 'Edit', edit_problem_path(@problem)
+|
+= link_to 'Back', problems_path

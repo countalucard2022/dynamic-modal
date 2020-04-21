@@ -1,0 +1,12 @@
+= bootstrap_form_with(model: problem, local: true) do |form|
+  .form-group 
+    = form.alert_message "Please fix issue below"    
+  .form-group    
+    = form.text_field :description , label: "Problem Description", class: "form-control"
+  = form.fields_for :answers do |ans|
+    =render 'answer_fields', form:ans
+  
+
+  .actions
+  = link_to_add_fields   "Add Answer" , form , :answers     
+  = form.submit
