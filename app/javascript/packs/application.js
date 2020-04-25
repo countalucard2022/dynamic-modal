@@ -4,10 +4,11 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+require('data-confirm-modal')
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery")
+// require("jquery")
 require("../packs/addFields")
 require("../packs/removeFields")
 import 'bootstrap'
